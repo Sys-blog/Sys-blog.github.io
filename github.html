@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub无法访问的解决方法</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        ul {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub无法访问的解决方法</h1>
+        <p>GitHub是全球最大的代码托管平台之一，但有时由于网络问题，国内用户可能会遇到无法访问的情况。以下是一些常见的解决方法：</p>
+        
+        <h2>1. 使用VPN</h2>
+        <p>VPN（虚拟私人网络）可以帮助你绕过网络限制，访问被封锁的网站。选择一个可靠的VPN服务提供商，并按照其指南进行设置。</p>
+        
+        <h2>2. 修改Hosts文件</h2>
+        <p>通过修改本地Hosts文件，可以手动解析GitHub的域名，从而绕过DNS解析问题。以下是具体步骤：</p>
+        <ul>
+            <li>打开Hosts文件（Windows系统位于C:\Windows\System32\drivers\etc\hosts，Mac和Linux系统位于/etc/hosts）。</li>
+            <li>在文件末尾添加以下内容：</li>
+        </ul>
+        <pre>
+140.82.114.4 github.com
+140.82.114.4 www.github.com
+185.199.108.153 assets-cdn.github.com
+185.199.108.153 raw.githubusercontent.com
+185.199.108.153 gist.githubusercontent.com
+185.199.108.153 cloud.githubusercontent.com
+185.199.108.153 camo.githubusercontent.com
+185.199.108.153 avatars.githubusercontent.com
+        </pre>
+        
+        <h2>3. 使用镜像站点</h2>
+        <p>国内有一些GitHub的镜像站点，可以暂时替代GitHub使用。例如：</p>
+        <ul>
+            <li><a href="https://github.com.cnpmjs.org" target="_blank">https://github.com.cnpmjs.org</a>(寄了)</li>
+            <li><a href="https://hub.fastgit.org" target="_blank">https://hub.fastgit.org</a>(没魔法打不开)</li>
+        </ul>
+        
+        <h2>4. 检查网络设置</h2>
+        <p>确保你的网络连接正常，尝试重启路由器或切换到其他网络环境。</p>
+        
+        <h2>5. 使用GitHub Desktop</h2>
+        <p>GitHub Desktop是一个桌面应用程序，可以帮助你管理GitHub仓库，即使无法访问网页版GitHub，也可以通过该应用程序进行操作。</p>
+        
+        <p>希望以上方法能帮助你解决GitHub无法访问的问题。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        code {
+            background-color: #f8f8f8;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>学习JavaScript</h1>
+    </header>
+    <nav>
+        <a href="#intro">介绍</a>
+        <a href="#basics">基础</a>
+        <a href="#advanced">进阶</a>
+        <a href="#resources">资源</a>
+    </nav>
+    <div class="container">
+        <div id="intro" class="content">
+            <h2>介绍</h2>
+            <p>JavaScript是一种高级编程语言，广泛用于Web开发。它可以让网页具有交互性，是现代Web开发不可或缺的一部分。JavaScript最初由Netscape公司的Brendan Eich在1995年创建，旨在为网页添加动态功能。如今，JavaScript不仅用于前端开发，还广泛应用于后端开发（通过Node.js）和服务器端编程。</p>
+            <p>例如，以下是一个简单的JavaScript代码示例，它会在网页加载时弹出一个提示框：</p>
+            <code>
+                <pre>
+                &lt;script&gt;
+                    alert('欢迎来到JavaScript的世界！');
+                &lt;/script&gt;
+                </pre>
+            </code>
+        </div>
+        <div id="basics" class="content">
+            <h2>基础</h2>
+            <p>学习JavaScript的基础知识，包括变量、数据类型、运算符、控制结构等。</p>
+            <ul>
+                <li><strong>变量</strong>: 在JavaScript中，变量可以使用<code>var</code>, <code>let</code>, 或 <code>const</code>声明。例如：</li>
+                <code>
+                    <pre>
+                    var x = 10;
+                    let y = 20;
+                    const z = 30;
+                    </pre>
+                </code>
+                <li><strong>数据类型</strong>: JavaScript有多种数据类型，包括字符串、数字、布尔值、数组、对象等。例如：</li>
+                <code>
+                    <pre>
+                    let str = "Hello, World!";
+                    let num = 123;
+                    let bool = true;
+                    let arr = [1, 2, 3];
+                    let obj = {name: "Alice", age: 25};
+                    </pre>
+                </code>
+                <li><strong>运算符</strong>: 包括算术运算符、赋值运算符、比较运算符、逻辑运算符等。例如：</li>
+                <code>
+                    <pre>
+                    let a = 5 + 3; // 算术运算符
+                    let b = a += 2; // 赋值运算符
+                    let c = a > b; // 比较运算符
+                    let d = (a > b) && (b < 10); // 逻辑运算符
+                    </pre>
+                </code>
+                <li><strong>控制结构</strong>: 如条件语句（<code>if</code>, <code>else</code>, <code>switch</code>）和循环语句（<code>for</code>, <code>while</code>, <code>do-while</code>）。例如：</li>
+                <code>
+                    <pre>
+                    if (a > b) {
+                        console.log("a 大于 b");
+                    } else {
+                        console.log("a 小于或等于 b");
+                    }
+
+                    for (let i = 0; i < 5; i++) {
+                        console.log(i);
+                    }
+
+                    let i = 0;
+                    while (i < 5) {
+                        console.log(i);
+                        i++;
+                    }
+                    </pre>
+                </code>
+            </ul>
+        </div>
+        <div id="advanced" class="content">
+            <h2>进阶</h2>
+            <p>掌握JavaScript的高级特性，如函数、对象、事件、DOM操作等。</p>
+            <ul>
+                <li><strong>函数</strong>: JavaScript函数可以作为参数传递，也可以从函数返回。例如：</li>
+                <code>
+                    <pre>
+                    function greet(name) {
+                        return "Hello, " + name + "!";
+                    }
+
+                    let message = greet("Alice");
+                    console.log(message);
+                    </pre>
+                </code>
+                <li><strong>对象</strong>: JavaScript对象是键值对的集合，可以通过点符号或方括号访问属性。例如：</li>
+                <code>
+                    <pre>
+                    let person = {
+                        name: "Alice",
+                        age: 25,
+                        greet: function() {
+                            return "Hello, my name is " + this.name;
+                        }
+                    };
+
+                    console.log(person.name); // 使用点符号访问属性
+                    console.log(person['age']); // 使用方括号访问属性
+                    console.log(person.greet()); // 调用对象的方法
+                    </pre>
+                </code>
+                <li><strong>事件</strong>: 事件是用户与网页交互时发生的事情，如点击、滚动等。例如：</li>
+                <code>
+                    <pre>
+                    document.getElementById("myButton").onclick = function() {
+                        alert("按钮被点击了！");
+                    };
+                    </pre>
+                </code>
+                <li><strong>DOM操作</strong>: 通过JavaScript可以动态地修改网页内容、结构和样式。例如：</li>
+                <code>
+                    <pre>
+                    let element = document.getElementById("myElement");
+                    element.innerHTML = "新的内容";
+                    element.style.color = "red";
+                    </pre>
+                </code>
+            </ul>
+        </div>
+        <div id="resources" class="content">
+            <h2>资源</h2>
+            <p>推荐一些学习JavaScript的资源，包括书籍、在线课程和社区。</p>
+            <ul>
+                <li><strong>书籍</strong>: 《JavaScript高级程序设计》、《你不知道的JavaScript》系列。</li>
+                <li><strong>在线课程</strong>: Coursera、Udemy、慕课网等平台上有许多优质的JavaScript课程。</li>
+                <li><strong>社区</strong>: Stack Overflow、GitHub、SegmentFault等社区可以找到许多JavaScript相关的讨论和资源。</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

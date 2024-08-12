@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System32-edge的个人博客</title>
+    <style>
+        /* 设置全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 50px; /* 确保内容不会被footer覆盖 */
+        }
+        /* 设置头部样式 */
+        header {
+            background-color: #6c7ae0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* 设置导航栏样式 */
+        nav {
+            background-color: #4a5568;
+            padding: 10px;
+            text-align: center;
+        }
+        /* 设置导航栏和内容区域链接样式 */
+        nav a, section a {
+            color: black; /* 修改为黑色 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* 设置导航栏和内容区域链接悬停样式 */
+        nav a:hover, section a:hover {
+            text-decoration: underline;
+        }
+        /* 设置内容区域样式 */
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* 设置页脚样式 */
+        footer {
+            background-color: #6c7ae0;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        /* 设置滚动时的页脚样式 */
+        body.scrolled footer {
+            opacity: 0;
+        }
+    </style>
+    <script>
+        /* 添加滚动事件监听器 */
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                document.body.classList.add('scrolled');
+            } else {
+                document.body.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>System32-edge的个人博客</h1>
+        <p>分享实用教程</p>
+    </header>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#tutorials">前端入门</a>
+        <a href="#about">关于我</a>
+        <a href="#contact">联系我</a>
+        <a href="#articles">文章</a> <!-- 新增的导航链接 -->
+    </nav>
+    <section id="home">
+        <h2>欢迎来到我的博客</h2>
+        <p>这里有很多实用的教程，帮助你学习新技能。</p>
+    </section>
+    <section id="tutorials">
+        <h2>前端入门</h2>
+        <ul>
+            <li><a href="html.html" target="_blank">如何学习HTML</a></li>
+            <li><a href="css.html" target="_blank">CSS入门指南</a></li>
+            <li><a href="js.html" target="_blank">JavaScript基础教程</a></li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>我是一个热爱分享的人，希望通过我的博客帮助更多人学习。</p>
+    </section>
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>你可以通过以下方式联系我：</p>
+        <ul>
+            <li>Email: szswsszsnb@qq.com</li>
+            <li>Email: 3763467940@qq.com</li>
+            <li>Email: system32.szs.edge@hotmail.com</li>
+            <li>Email: system32.edge@gmail.com</li>
+            <li>QQ: 3763467940</li>
+        </ul>
+    </section>
+    <section id="articles"> <!-- 新增的文章板块 -->
+        <h2>文章</h2>
+        <p>查看更多文章，请点击以下链接：</p>
+        <ul>
+            <li><a href="github.html" target="_blank">解决GitHub上不去问题</a></li>
+            <li><a href="chrome.html" target="_blank">Chrome浏览器常用插件推荐</a></li>
+            <li><a href="software.html" target="_blank">Windows常用软件推荐</a></li>
+            <li><a href="mh.html" target="_blank">使用Lively Wallpaper和致美化设置动态壁纸</a></li>
+            <li><a href="vs.html" target="_blank">VS Code常用快捷键</a></li>
+            <li><a href="wps.html" target="_blank">Windows 10 如何安装和使用WPS Office</a></li>
+            <li><a href="mcserver.html" target="_blank">我的世界开服教程</a></li>
+            <li><a href="mcluncher.html" target="_blank">我的世界启动器推荐</a></li>
+            <li><a href="linux.html" target="_blank">Linux常用命令</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>版权所有 &copy; 2024 System32-edge的个人博客</p>
+    </footer>
+</body>
+</html>
