@@ -1,7 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <code>{
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "item/doll/steve",
@@ -259,6 +255,3 @@
 			]
 		}
 	]
-}</code>
-  </head>
-</html>
